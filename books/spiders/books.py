@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
-import csv
-from urllib.parse import urlsplit
+try:
+    from urllib.parse import urlsplit
+except ImportError:
+     from urlparse import urlsplit
 import scrapy
 
 
